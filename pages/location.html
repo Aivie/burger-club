@@ -66,6 +66,7 @@
 
   <script>
     var map;
+    var mapIcon = "../images/burgerIcon.png"
 
     function initMap() {
       var uluru = {
@@ -82,11 +83,13 @@
       });
       var marker = new google.maps.Marker({
         position: uluru,
-        map: map
+        map: map,
+        icon: mapIcon
       });
       var marker = new google.maps.Marker({
         position: scripted,
-        map: map
+        map: map,
+        icon: mapIcon
       })
     };
   </script>
